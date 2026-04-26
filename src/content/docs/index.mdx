@@ -1,40 +1,57 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: OpenClaw — Under the Hood
+description: A 10-chapter deep dive into OpenClaw architecture, by LangCraft.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: A source-backed deep dive into how OpenClaw works — for developers and power users who want to understand the internals.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Start Reading
+      link: /openclaw-deep-dive/intro/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: GitHub
+      link: https://github.com/langcraft-flux/openclaw-deep-dive
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 10 Chapters
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+	<Card title="1. Gateway Architecture" icon="rocket">
+		The WebSocket broker, lazy-load startup, agent dispatch, and message flow.
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="2. Workspace Structure" icon="document">
+		File hierarchy, loading order, and how AGENTS.md, SOUL.md, and friends interact.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="3. The Agent Loop" icon="refresh">
+		Turn lifecycle: context assembly, LLM call, tool execution, and reply.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="4. Session Management" icon="puzzle">
+		How session keys are constructed, stored, isolated, and compacted.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="5. Channel & Account Model" icon="laptop">
+		Channel registration, multi-account routing, and the plugin interface.
+	</Card>
+	<Card title="6. Multi-Agent Routing" icon="random">
+		Binding evaluation, agent isolation, and the 8-tier routing cache.
+	</Card>
+	<Card title="7. Memory System" icon="open-book">
+		Two memory layers: static file injection and semantic search backends.
+	</Card>
+	<Card title="8. Skills & Tools" icon="setting">
+		Built-in tools, AgentSkills spec, skill discovery, and allow/deny lists.
+	</Card>
+	<Card title="9. Automation" icon="approve-check-circle">
+		Cron internals, hooks, standing orders, and TaskFlow architecture.
+	</Card>
+	<Card title="10. Security & Permissions" icon="warning">
+		Exec policy, the approval flow, sandboxing, and auth profiles.
 	</Card>
 </CardGrid>
+
+---
+
+Built by [LangCraft](https://langcraft.com) · Source analysis based on OpenClaw v2026.4.x
