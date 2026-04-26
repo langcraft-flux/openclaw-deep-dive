@@ -1,0 +1,64 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  description: string;
+  icon: string;
+}
+const { title, href, description, icon } = Astro.props;
+---
+
+<a href={href} class="chapter-card">
+  <span class="icon" set:html={icon} />
+  <span class="content">
+    <span class="title">{title}</span>
+    <span class="desc">{description}</span>
+  </span>
+  <span class="arrow">→</span>
+</a>
+
+<style>
+  .chapter-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    background: var(--sl-color-black);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .chapter-card:hover {
+    border-color: var(--sl-color-accent);
+    background: var(--sl-color-gray-7);
+  }
+  .icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+  }
+  .title {
+    font-weight: 600;
+    color: var(--sl-color-white);
+    font-size: 1rem;
+  }
+  .desc {
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-3);
+    line-height: 1.4;
+  }
+  .arrow {
+    color: var(--sl-color-accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+</style>
