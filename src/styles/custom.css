@@ -1,0 +1,38 @@
+/* LangCraft brand colours */
+:root {
+  --sl-color-accent-low: #1a1f3a;
+  --sl-color-accent: #4f6ef7;
+  --sl-color-accent-high: #a5b4fc;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f0f2ff;
+  --sl-color-gray-6: #1a1f3a;
+  --sl-font-system: 'Inter', system-ui, sans-serif;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #1e2347;
+  --sl-color-accent: #6d85f8;
+  --sl-color-accent-high: #c7d2fe;
+  --sl-color-bg: #0f1118;
+  --sl-color-bg-nav: #131620;
+  --sl-color-bg-sidebar: #131620;
+}
+
+/* Tighten up headings */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Code blocks */
+.expressive-code {
+  border-radius: 8px;
+}
+
+/* Chapter intro callouts */
+.chapter-meta {
+  font-size: 0.875rem;
+  color: var(--sl-color-gray-3);
+  border-left: 3px solid var(--sl-color-accent);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
