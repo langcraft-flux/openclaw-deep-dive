@@ -3,8 +3,6 @@ title: Session Management
 description: Session key construction, storage, isolated vs shared sessions, and compaction.
 ---
 
-# Session Management
-
 Sessions are the persistence layer of every agent conversation. OpenClaw encodes a wealth of routing information directly into the session key, which means the key alone tells you which agent owns the session, which channel it arrived from, and what kind of conversation it represents.
 
 ## Session Key Anatomy

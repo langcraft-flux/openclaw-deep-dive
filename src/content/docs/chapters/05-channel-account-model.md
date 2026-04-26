@@ -3,8 +3,6 @@ title: Channel & Account Model
 description: Channel plugin registration, multi-account architecture, and inbound/outbound routing.
 ---
 
-# Channel & Account Model
-
 OpenClaw's channel system is the abstraction that lets a single agent speak Discord, WhatsApp, Telegram, Slack, and custom platforms through a unified interface. This chapter dissects the plugin contract, account model, and the path that a message takes from a platform webhook to the agent loop — and back.
 
 ## What is a Channel?

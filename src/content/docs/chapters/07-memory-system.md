@@ -3,8 +3,6 @@ title: Memory System
 description: How memory files are loaded, the search backends, what gets included when, and the builtin vs QMD architecture.
 ---
 
-# Memory System
-
 OpenClaw has two memory layers with very different characteristics. The first is *static memory* — the `MEMORY.md` file read from disk on every turn. The second is *semantic memory search* — a vector + full-text index over workspace files and session transcripts. Understanding when each layer activates and what it costs is essential for tuning agent behaviour.
 
 ## Static Memory: MEMORY.md

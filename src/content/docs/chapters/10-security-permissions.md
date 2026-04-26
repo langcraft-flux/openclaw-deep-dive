@@ -3,8 +3,6 @@ title: Security & Permissions
 description: Exec policy, the approval flow, sandboxing, auth profiles, token scopes, and the gateway's trust model.
 ---
 
-# Security & Permissions
-
 OpenClaw's security model is layered: authentication at the gateway boundary, authorisation at the method level, exec policy for shell commands, and sandboxing for process isolation. This chapter walks each layer from the outermost to the innermost.
 
 ## Layer 1: Gateway Authentication

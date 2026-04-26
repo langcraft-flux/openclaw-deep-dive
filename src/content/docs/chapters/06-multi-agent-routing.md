@@ -3,8 +3,6 @@ title: Multi-Agent Routing
 description: Binding evaluation, agent isolation, workspace-per-agent, and how the gateway picks which agent handles a message.
 ---
 
-# Multi-Agent Routing
-
 One of OpenClaw's less-obvious capabilities is hosting multiple agents simultaneously — each with their own workspace, session history, system prompt, and tool configuration — all served from a single gateway process. This chapter explains how a message from any channel gets matched to the right agent.
 
 ## The Binding System

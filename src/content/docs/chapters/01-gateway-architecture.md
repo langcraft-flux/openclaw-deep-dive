@@ -3,8 +3,6 @@ title: Gateway Architecture
 description: The WebSocket broker, session routing, and agent dispatch pipeline.
 ---
 
-# Gateway Architecture
-
 The OpenClaw gateway is the nerve centre of every deployment. Understanding its startup sequence, broker architecture, and message-dispatch pipeline is the foundation for everything else in this course.
 
 ## Entry Point: Lazy-Loaded Server

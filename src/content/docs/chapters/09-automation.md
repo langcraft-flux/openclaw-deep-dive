@@ -3,8 +3,6 @@ title: Automation
 description: Cron job internals, hooks, standing orders, TaskFlow, and how scheduled agent turns work.
 ---
 
-# Automation
-
 OpenClaw's automation layer spans three distinct systems: *cron jobs* (time-based scheduling), *hooks* (event-driven triggers), and *TaskFlow* (durable multi-step work). Each builds on the same underlying agent turn machinery but with different lifecycle ownership.
 
 ## The Cron Service

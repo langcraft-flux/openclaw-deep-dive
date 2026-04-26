@@ -3,8 +3,6 @@ title: The Agent Loop
 description: Full turn lifecycle — context assembly, LLM call, tool execution, and reply delivery.
 ---
 
-# The Agent Loop
-
 A single user message triggers a multi-step pipeline inside the agent. This chapter traces that pipeline from message receipt to final reply, with particular attention to context assembly, the tool-execution loop, and how thinking levels influence the underlying API call.
 
 ## The Embedded Runner

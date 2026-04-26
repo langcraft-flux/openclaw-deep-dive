@@ -3,8 +3,6 @@ title: Workspace Structure
 description: File hierarchy, loading order, and how workspace context reaches the model.
 ---
 
-# Workspace Structure
-
 Every OpenClaw agent lives inside a *workspace directory* — a regular folder on disk that functions as the agent's persistent identity, memory, and configuration surface. This chapter traces exactly which files are loaded, in what order, and how their content ends up in the model's context window.
 
 ## The Canonical File Set

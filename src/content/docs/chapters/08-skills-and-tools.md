@@ -3,8 +3,6 @@ title: Skills & Tools
 description: Built-in tool registration, the AgentSkills spec, SKILL.md discovery, and tool allow/deny lists.
 ---
 
-# Skills & Tools
-
 The tool system has two distinct layers: *built-in tools* shipped with OpenClaw, and *AgentSkills* — discoverable packages that inject SKILL.md instructions at runtime. Understanding both layers — and how they interact with allow/deny policies — is essential for customising what an agent can do.
 
 ## Built-In Tools: Registration
