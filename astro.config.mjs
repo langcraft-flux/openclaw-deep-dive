@@ -8,15 +8,10 @@ export default defineConfig({
     starlight({
       title: 'OpenClaw: Under the Hood',
       description: 'A 10-chapter deep dive into OpenClaw architecture — by LangCraft',
-      logo: {
-        light: './src/assets/langcraft-light.svg',
-        dark: './src/assets/langcraft-dark.svg',
-        replacesTitle: false,
-      },
       customCss: ['./src/styles/custom.css'],
-      social: {
-        github: 'https://github.com/langcraft-flux/openclaw-deep-dive',
-      },
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/langcraft-flux/openclaw-deep-dive' },
+      ],
       sidebar: [
         {
           label: 'Introduction',
