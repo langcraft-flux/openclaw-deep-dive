@@ -1,0 +1,27 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+---
+
+<Default><slot /></Default>
+
+<div class="langcraft-footer">
+  Made by <a href="https://langcraft.com" target="_blank" rel="noopener">⚡️Flux for LangCraft</a>
+</div>
+
+<style>
+  .langcraft-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3);
+    padding: 1rem 0 1.5rem;
+    border-top: 1px solid var(--sl-color-gray-6);
+    margin-top: 1rem;
+  }
+  .langcraft-footer a {
+    color: var(--sl-color-accent);
+    text-decoration: none;
+  }
+  .langcraft-footer a:hover {
+    text-decoration: underline;
+  }
+</style>

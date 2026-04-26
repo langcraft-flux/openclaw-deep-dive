@@ -9,6 +9,9 @@ export default defineConfig({
       title: 'OpenClaw: Under the Hood',
       description: 'A 10-chapter deep dive into OpenClaw architecture — by LangCraft',
       customCss: ['./src/styles/custom.css'],
+      components: {
+        Footer: './src/components/Footer.astro',
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/langcraft-flux/openclaw-deep-dive' },
       ],
@@ -31,12 +34,6 @@ export default defineConfig({
             { label: '9. Automation', link: '/chapters/09-automation' },
             { label: '10. Security & Permissions', link: '/chapters/10-security-permissions' },
           ],
-        },
-      ],
-      head: [
-        {
-          tag: 'meta',
-          attrs: { name: 'author', content: 'LangCraft' },
         },
       ],
     }),
